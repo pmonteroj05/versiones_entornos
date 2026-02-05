@@ -20,6 +20,24 @@ public class Ejercicio1 {
         for (int i = 0; i < 5; i++)
             System.out.print(n[i] + " ");
 
-        System.out.printf("Suma: %d  |  Media: %f", suma, media);
+        System.out.println();
+
+        int mayor = n[0];
+        int menor = n[0];
+        int pos = 0;
+        int neg = 0;
+
+        for (int i = 0; i < 5; i++) {
+            if (n[i] > mayor)
+                mayor = n[i];
+            if (n[i] < menor)
+                menor = n[i];
+            if (n[i] > 0)
+                pos++;
+            else if (n[i] < 0)
+                neg++;
+        }
+
+        System.out.printf("Suma: %d  |  Media: %f%nMayor: %d  |  Menor: %d%nCantidad de positivos: %d  | Cantidad de negativos: %d", suma, media, mayor, menor, pos, neg);
     }
 }
