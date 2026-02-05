@@ -18,13 +18,20 @@ public class Ejercicio2 {
 
         int minima = edades[0];
         int maxima = edades[0];
+        int mayores = 0;
+        int menores = 0;
+
         for (int i = 0; i < 5; i++) {
             if (edades[i] < minima)
                 minima = edades[i];
             if (edades[i] > maxima)
                 maxima = edades[i];
+            if (edades[i] >= 18)
+                mayores++;
+            else
+                menores++;
         }
 
-        System.out.println("Edad mínima: " + minima + "  |  Edad máxima: " + maxima);
+        System.out.printf("Edad mínima: %d  |  Edad máxima: %d%nMayores: %d  |  Menores: %d", minima, maxima, mayores, menores);
     }
 }
