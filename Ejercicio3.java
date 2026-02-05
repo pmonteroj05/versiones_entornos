@@ -21,8 +21,13 @@ public class Ejercicio3 {
         }
 
         System.out.print("\nArray ordenado de mayor a menor: ");
-        for (int i = 0; i < 10; i++) 
+        for (int i = 0; i < 10; i++)
             System.out.print(numeros[i] + " ");
+
+        System.out.print("\nNúmeros pares del array: ");
+        for (int i = 0; i < 10; i++)
+            if (numeros[i] % 2 == 0)
+                System.out.print(numeros[i] + " ");
     }
 
 }
