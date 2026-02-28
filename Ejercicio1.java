@@ -38,6 +38,17 @@ public class Ejercicio1 {
                 neg++;
         }
 
-        System.out.printf("Suma: %d  |  Media: %f%nMayor: %d  |  Menor: %d%nCantidad de positivos: %d  | Cantidad de negativos: %d", suma, media, mayor, menor, pos, neg);
+        System.out.printf("Suma: %d  |  Media: %f%nMayor: %d  |  Menor: %d%nCantidad de positivos: %d  | Cantidad de negativos: %d%n", suma, media, mayor, menor, pos, neg);
+
+        System.out.println("Repetición de los números: ");
+        int cont;
+        for (int num : n){
+            cont = 0;
+            for (int nume : n){
+                if(num == nume)
+                    cont++;
+            }
+            System.out.printf("El número %d se repite %d%n", num, cont);
+        }
     }
 }
