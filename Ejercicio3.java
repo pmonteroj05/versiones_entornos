@@ -28,6 +28,12 @@ public class Ejercicio3 {
         for (int i = 0; i < 10; i++)
             if (numeros[i] % 2 == 0)
                 System.out.print(numeros[i] + " ");
-    }
 
+        System.out.println();
+        int suma = 0;
+        for(int i : numeros)
+            suma += i;
+
+        System.out.println("Media de los números generados: " + (suma / 10));
+    }
 }
