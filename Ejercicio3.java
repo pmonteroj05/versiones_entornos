@@ -60,7 +60,7 @@ public class Ejercicio3 {
                 ip++;
             }
         }
-        
+
         Scanner num = new Scanner(System.in);
 
         System.out.print("Introduce el nº que quiera buscar: ");
