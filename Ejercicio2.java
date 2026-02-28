@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ejercicio2 {
@@ -39,5 +40,11 @@ public class Ejercicio2 {
             suma += edades[i];
 
         System.out.println("Media de edades: " + (suma/5));
+
+        Arrays.sort(edades);
+
+        System.out.println("Edades ordenados de menor a mayor: ");
+        for(int i : edades)
+            System.out.println(i);
     }
 }
