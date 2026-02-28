@@ -64,5 +64,18 @@ public class Ejercicio2 {
         }
 
         System.out.printf("Rangos de edad:%n * 0-17: %d%n * 18-30: %d%n * 31-50: %d%n * +51: %d%n", men, jov, adul, may);
+
+        boolean mayorEdad;
+        String mens = " ¿Mayor de edad?: ";
+
+        for(int i : edades){
+            if(i >= 0 && i <= 17){
+                mayorEdad = false;
+                System.out.println(i + mens + mayorEdad);
+            } else{
+                mayorEdad = true;
+                System.out.println(i + mens + mayorEdad);
+            }
+        }
     }
 }
