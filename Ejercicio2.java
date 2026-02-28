@@ -32,6 +32,12 @@ public class Ejercicio2 {
                 menores++;
         }
 
-        System.out.printf("Edad mínima: %d  |  Edad máxima: %d%nMayores: %d  |  Menores: %d", minima, maxima, mayores, menores);
+        System.out.printf("Edad mínima: %d  |  Edad máxima: %d%nMayores: %d  |  Menores: %d%n", minima, maxima, mayores, menores);
+
+        int suma = 0;
+        for (int i = 0; i < 5; i++)
+            suma += edades[i];
+
+        System.out.println("Media de edades: " + (suma/5));
     }
 }
