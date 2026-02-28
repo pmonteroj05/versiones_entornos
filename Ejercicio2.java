@@ -46,5 +46,23 @@ public class Ejercicio2 {
         System.out.println("Edades ordenados de menor a mayor: ");
         for(int i : edades)
             System.out.println(i);
+
+        int men = 0;
+        int jov = 0;
+        int adul = 0;
+        int may = 0;
+
+        for(int i : edades){
+            if(i >= 0 && i <= 17)
+                men++;
+            else if (i >= 18 && i <= 30)
+                jov++;
+            else if (i >= 31 && i <= 50)
+                adul++;
+            else
+                may++;
+        }
+
+        System.out.printf("Rangos de edad:%n * 0-17: %d%n * 18-30: %d%n * 31-50: %d%n * +51: %d%n", men, jov, adul, may);
     }
 }
