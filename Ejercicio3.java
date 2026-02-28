@@ -35,5 +35,14 @@ public class Ejercicio3 {
             suma += i;
 
         System.out.println("Media de los números generados: " + (suma / 10));
+
+        //Mostrar los números que estén por encima de la media
+
+        System.out.println("Números por encima de la media: ");
+
+        int media = suma / 10;
+        for(int i : numeros)
+            if(i > media)
+                System.out.println(i);
     }
 }
