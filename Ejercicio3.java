@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Ejercicio3 {
 
     public static void main(String[] args){
@@ -42,7 +44,7 @@ public class Ejercicio3 {
         for(int i : numeros)
             if(i > media)
                 System.out.println(i);
-        
+
 
         int pares [] = new int[numeros.length];
         int impares [] = new int[numeros.length];
@@ -58,5 +60,20 @@ public class Ejercicio3 {
                 ip++;
             }
         }
+        
+        Scanner num = new Scanner(System.in);
+
+        System.out.print("Introduce el nº que quiera buscar: ");
+        int buscar = num.nextInt();
+        int i = 0;
+        boolean bandera = false;
+
+        do {
+            if(numeros[i] == buscar){
+                System.out.println("El número " + buscar + " Se encuentra en la posición " + (i - 1));
+                bandera = true;
+            }else
+                i++;
+        }while(!bandera);
     }
 }
