@@ -44,11 +44,28 @@ public class Ejercicio1 {
         int cont;
         for (int num : n){
             cont = 0;
-            for (int nume : n){
+            for (int nume : n)
                 if(num == nume)
                     cont++;
-            }
             System.out.printf("El número %d se repite %d%n", num, cont);
         }
+
+        System.out.print("\nIntroduce el número que deseas eliminar: ");
+        int numElim = numeros.nextInt();
+
+        int nuevoTam = 0;
+        for (int i = 0; i < n.length; i++) {
+            if (n[i] != numElim) {
+                n[nuevoTam] = n[i];
+                nuevoTam++;
+            }
+        }
+
+        for (int i = nuevoTam; i < n.length; i++)
+            n[i] = 0;
+
+        System.out.println("Números restantes: ");
+        for (int i = 0; i < nuevoTam; i++)
+            System.out.print(n[i] + " ");
     }
 }
